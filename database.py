@@ -97,9 +97,9 @@ class Login(object):
                     .format(c = column, v = value, u = self.user))
         self.conn.commit()
         return value
-            
+ """*********** bank user login **********"""
 if __name__ == '__main__':
-    login = Login('Data.db')
+    login =Login('Data.db')
     login.createAccount('Joseph','joseph')
     login.connect('Joseph', 'joseph')
     if login.connected:
